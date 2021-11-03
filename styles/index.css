@@ -1,0 +1,124 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  max-width: 1440px;
+  margin: auto;
+}
+
+li,
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: #1d2540;
+}
+
+.logo {
+  cursor: pointer;
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-link li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: rgb(119, 128, 111);
+}
+
+.cta button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+/*.box:nth-last-child(1) {
+  margin-left: 100px;
+}*/
+
+.image-1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.wrapper-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box:nth-last-child(3) {
+  margin-left: 20px;
+}
+
+.box {
+  max-width: 345px;
+  margin-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #000;
+
+  text-align: center;
+}
+
+.wrapper-1 button {
+  background-color: rgb(255, 251, 0);
+  border-color: #000;
+  border-radius: 10px;
+  height: 50px;
+  width: 150;
+  margin-top: -70px;
+}
+
+@media screen and (max-width: 800px) {
+  .app-header {
+    background-color: #1d2540;
+    display: block;
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: auto;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .nav-link {
+    display: none;
+  }
+
+  .wrapper-1 .box {
+    display: flex;
+    flex-direction: column;
+  }
+}
